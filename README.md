@@ -1,48 +1,12 @@
-# Robotics-Matrix-Game
+ # Robotics-Matrix-Game
 
- ## Homework 5 (game menu)
-
- ### Requirements 
+ ## Backstory
  
- #### Components
+ ## Components
  An LCD, a joystick, a buzzer, led matrix, potentiometer and a max7219 datasheet.
  
- #### Menu
- 
- ##### -Intro message
- 
- ##### -Start Game
- * Shown details while playing.
- * Screen(s) upon game ending with input in order to move on.
- * Informs you when highscore is achieved.
- * Enter name for highscore (if not already entered).
- 
- ##### -Highscore
- At least top 5 in eeprom with name and score.
- 
- ##### -Settings
- ∗ Enter name (can be somewhere else, depending on how and where you use it).
- ∗ Starting level / difficulty or something similar, depending on game logic.
- ∗ LCD contrast control (eeprom) - optional.
- ∗ LCD brightness control (eeprom).
- ∗ Matrix brightness control (eeprom). Light up the entire matrix when changing it, so you can see the actual difference.
- ∗ Sound control on/off (eeprom).
- ∗ Reset highscores button in settings.
- 
- ##### -About
- Github link/user (specifcy if user!), developer name and game name.
- 
- ##### -How to play
- Short and informative description.
- 
- ##### -Navigation style
- Usability, intiuitive, beauty. Different ”picture” on the matrix for each menu category (hammer for settings, challice for highscore etc). Should do a small sound  when changing selected menu category etc.
- 
- ##### Have fun!
- 
- #### Coding task
- Coding style is of utmost importance. You must have a perfectly clean code in order to receive the maximum grade. An important coding challenge present in this task is using millis() instead of delay(). However, remember that the bulk of the grade is if the project works. Do not tend to small details unless you have the entire functionality done.
- 
+ ## Menu
+
  ### Details
  
  #### When starting the menu you will hear the authentic Nokia sound.
@@ -95,13 +59,36 @@
  ##### 6. Reset score
  Use the joystick up/down to select RESET (reset the highscore the returns you to the menu) or CANCEL (return to menu).
  
+ ## Game
+  
+ ### Details
+
+ #### How to play
+  
+ As you start the game a dot will appear in the top left corner. That will be your starting position. Move the joystick in order to move the snake. Random  food(bliking dots) will appear on the 8x8 led matrix. You have to collect as much food as possible. There are some changes depending on the difficulty that you have selected, such as:
+  
+ ##### Easy Level
+ 
+ Here the game will end only if you eat yourself(the front of the snake touches other segment of the snake). Also, you have the freedom to go through walls and the snake moves at a slow speed. 
+  
+ ##### Medium Level
+  
+ On the medium level will appear a wall that surrounds the edges of the playground(matrix). You cannot go through the walls and the speed of the snake is still slow.
+  
+ ##### Hard Level
+  
+ Hard level is the same as the medium one but the speed increases.
+ 
  ### Image files
  #### Checkout this link
- https://www.youtube.com/watch?v=s0oF2kljLoA&list=PLASPWLXL8uFXgAFEjd-jlXm1SQpGpdLho&index=5&ab_channel=CruceanuCalin
+ https://www.youtube.com/watch?v=YPbjwJ3ZOU8&list=PLASPWLXL8uFXgAFEjd-jlXm1SQpGpdLho&index=6&ab_channel=CruceanuCalin
  #### Setup photos
- ![WhatsApp Image 2022-12-09 at 13 34 55](https://user-images.githubusercontent.com/80258120/206701556-49a8d51d-342c-409e-85d0-fe3b9530755f.jpeg)
- ![WhatsApp Image 2022-12-09 at 13 34 56](https://user-images.githubusercontent.com/80258120/206701566-80867869-d0b1-402c-a5cd-710e775bdea8.jpeg) 
- ![WhatsApp Image 2022-12-09 at 13 34 56 (1)](https://user-images.githubusercontent.com/80258120/206701589-091c85c1-54e3-4ebf-ac90-6fa69a9af2c8.jpeg)
+ ![WhatsApp Image 2022-12-20 at 17 21 32 (1)](https://user-images.githubusercontent.com/80258120/208702719-7ee99a4d-b97e-46ff-9e66-7c320dcf1d26.jpeg)
+ ![WhatsApp Image 2022-12-20 at 17 21 34](https://user-images.githubusercontent.com/80258120/208702762-8761b90c-b286-4812-b4fb-b326fca8b026.jpeg
+ ![WhatsApp Image 2022-12-20 at 17 21 33](https://user-images.githubusercontent.com/80258120/208702843-ca3f50c7-438b-4ded-8edc-a5eaf8cf3c9c.jpeg)
+ ![WhatsApp Image 2022-12-20 at 17 21 32 (2)](https://user-images.githubusercontent.com/80258120/208702872-07bb9a96-dc23-4b9b-87ac-ed5651e5f106.jpeg)
+ ![WhatsApp Image 2022-12-20 at 17 21 32](https://user-images.githubusercontent.com/80258120/208702909-8ca8908b-40c1-4918-8c52-9361001c16d4.jpeg)
+
 
 
 
